@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+$font-family: 'DM Sans',
+sans-serif;
+$color: #086CF9;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font-family;
+}
+
+.container {
+    .header {
+        font-family: $font-family;
+        .navbar-menu {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 48px 0;
+            .logotip {
+                p {
+                    font-weight: bold;
+                    font-size: 24px;
+                    line-height: 31px;
+                    color: #222222;
+                }
+            }
+            ul {
+                list-style-type: none;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 45px;
+                li {
+                    list-style-type: none;
+                    padding-bottom: 3px;
+                    cursor: pointer;
+                    a {
+                        text-decoration: none;
+                        color: #000;
+                        font-size: 16px;
+                        line-height: 155%;
+                    }
+                }
+                // li::after {}
+                li:hover {
+                    a {
+                        color: #086CF9;
+                    }
+                }
+            }
+            button {
+                font-size: 16px;
+                line-height: 24px;
+                padding: 12px 24px;
+                background-color: #086CF9;
+                border: none;
+                cursor: pointer;
+                border-radius: 4px;
+                transition: .2s linear;
+                a {
+                    text-decoration: none;
+                    color: #fff;
+                    letter-spacing: 0.1em;
+                }
+            }
+            button:hover {
+                border: 1px solid #086CF9;
+                background: #fff;
+                a {
+                    color: #086CF9;
+                }
+            }
+        }
+    }
+    .hero-section {
+        position: relative;
+        margin-bottom: 619px;
+        #myVideo {
+            position: absolute;
+            height: 849px;
+            text-align: center;
+        }
+        .content {
+            position: relative;
+            text-align: center;
+            color: #fff;
+            display: flex;
+            top: 259px;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            h1 {
+                font-weight: bold;
+                font-size: 56px;
+                line-height: 73px;
+                margin: 24px;
+            }
+            p {
+                font-size: 16px;
+                line-height: 155%;
+                text-align: center;
+                margin-bottom: 54px;
+            }
+            button {
+                padding: 16px 30px;
+                background-color: #086CF9;
+                border: none;
+                cursor: pointer;
+                a {
+                    text-decoration: none;
+                    color: #fff;
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+    .title {
+        text-align: center;
+        margin-bottom: 48px;
+        h1 {
+            font-weight: bold;
+            font-size: 38px;
+            line-height: 62px;
+        }
+        p {
+            color: #555555;
+        }
+    }
+    .work-process {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 2em;
+        margin-bottom: 128px;
+        .video-instructor {
+            border-radius: 5px;
+        }
+        .service-note {
+            display: flex;
+            justify-content: center;
+            gap: 3em;
+            text-align: center;
+            flex-wrap: wrap;
+            div {
+                cursor: pointer;
+                transition: .3s linear;
+                h2 {
+                    margin: 27px 0 16px 0;
+                }
+            }
+            div:hover {
+                transform: scale(1.05);
+            }
+        }
+    }
+    .gallery {
+        margin: 20px 40px;
+        text-align: center;
+        img {
+            height: 248px;
+            width: 368px;
+            margin: 2px;
+        }
+    }
+    footer {
+        margin-top: 100px;
+        text-align: center;
+        p {
+            font-size: 15px;
+            line-height: 1.5;
+            color: #555555;
+            opacity: .5;
+        }
+    }
+}
